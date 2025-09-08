@@ -130,6 +130,3 @@ jobs:
       - name: Cleanup
         if: always()
         run: docker rm -f aut || true
-
-
-  
