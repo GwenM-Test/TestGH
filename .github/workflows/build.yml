@@ -59,6 +59,17 @@ jobs:
           format: 'table'
           exit-code: '1'
 
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v3
+        with:
+         args: "--verbose"
+
   zap:
     name: ZAP
     runs-on: ubuntu-latest
