@@ -10,7 +10,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 // --- Dummy Hardcoded Secrets to Trigger Secret Detection ---
-const AWS_ACCESS_KEY_ID = "DlQbwfFKz/2ZXjv16SY4spjrO0IZzRsEkOA5ujLhxY1Ir7MDUyuqeXNBZdkcb9as";             // AWS access key ID pattern
+const AWS_ACCESS_KEY_ID = "EHL01tNYUFVaFHI7jaV1Av8JNAt4XJWhFED0Tuj0Bl5R8v1KGYsS7XUohWYKVcmv";            
 const AWS_SECRET_ACCESS_KEY = "Y3+EfqYxt07teU6k1y+pKEO760hnoHdzaFKm3j3c/cSAs4v38hZ2/a2BquMqc4Z3";
 const TWILIO_API_KEY = "F4u6u/DFQuHcju9CjQop3DzlcYPeKWYJTNueB66HQzUn+JoA3q79HWTskooOqInU";
 const FACEBOOK_TOKEN = "TQg1QKyNtuh42dHrWBuxvgNlt8Y8ScOVQ1xzAa8n+Pq2+C5SoxlSDJRBka87jPZ8";
@@ -64,3 +64,4 @@ app.post('/transfer', (req, res) => {
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
+
