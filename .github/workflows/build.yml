@@ -69,8 +69,6 @@ jobs:
 
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
-        with:
-         args: "--verbose"
 
   zap:
     name: ZAP
